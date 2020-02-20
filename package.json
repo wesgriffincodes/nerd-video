@@ -20,7 +20,7 @@
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start"
   },
-  
+
   "eslintConfig": {
     "extends": "react-app"
   },

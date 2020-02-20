@@ -9,6 +9,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(pino);
 
+var distDir = __dirname + "/dist/";
+ app.use(express.static(distDir));
+
 const sendTokenResponse = (token, res) => {
   res.set('Content-Type', 'application/json');
   res.send(
